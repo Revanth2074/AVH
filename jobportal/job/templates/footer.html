@@ -1,0 +1,28 @@
+{% load static %}
+
+<div class="mt-4" style="background-color:skyblue; width: 120%; height: 300px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mt-3">
+                <h3 class="text-white">Contact Information</h3>
+                <p style="color: black; font-size: 18px;"><i class="fa fa-map-marker text-danger"></i> KLU Vijayawada</p>
+                <p style="color: black; font-size: 18px;"><i class="fa fa-envelope text-danger"></i> revanth.2074@gmail.com</p>
+                <p style="color: black; font-size: 18px;"><i class="fa fa-mobile text-danger"></i>+91 7093518889</p>
+                <p style="color: black; font-size: 18px;"><i class="fa fa-globe text-danger"></i> www.abc123.com</p>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h3 class="text-white">About Us</h3>
+                <p style="color: black; font-size: 18px;">The AdVantageHub project aims to develop a robust web-based platform for efficiently managing and optimizing online advertising campaigns. The system will serve as a centralized hub for advertisers, marketers, and agencies, streamlining the process of creating, monitoring, and optimizing digital ad campaigns across various online channels.</p>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h3 class="text-white">Newsletter</h3>
+                <p style="color: black; font-size: 18px;">If you want any extra information then send me your email id</p>
+                <form method="post" class="form-inline">
+                    {% csrf_token %}
+                    <input type="email" name="emailid" placeholder="Email ID" required class="form-control mr-2">
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

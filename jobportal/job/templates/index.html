@@ -1,0 +1,56 @@
+{% load static %}
+{% block body %}
+{% include 'Navigation.html' %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdVantageHub | The Ultimate Online Advertising Platform</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}" />
+  <script src="{% static 'script.js' % }" defer></script>
+
+</head>
+<body>
+
+  <main>
+    <section class="features">
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <img src="{% static 'images/icons8-ad-50.png' %}" alt="Campaign Management" />
+          <h3>Campaign Management</h3>
+          <p>Create, manage, and monitor your online advertising campaigns from a single platform.</p>
+        </div>
+        <div class="feature-item">
+          <img src="{% static 'images/icons8-performance-50.png' %}" alt="Performance Tracking" />
+          <h3>Performance Tracking</h3>
+          <p>Track the performance of your campaigns across various metrics and channels.</p>
+        </div>
+        <div class="feature-item">
+          <img src="{% static 'images/icons8-ad-optimization-50.png' %}" alt="Ad Optimization" />
+          <h3>Ad Optimization</h3>
+          <p>Optimize your ad campaigns for better results and higher ROI.</p>
+        </div>
+        <div class="feature-item">
+          <img src="{% static 'images/icons8-collaboration-50.png' %}" alt="Collaboration" />
+          <h3>Collaboration</h3>
+          <p>Collaborate with your team members and clients to streamline your advertising efforts.</p>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <h2>Start Using AdVantageHub Today</h2>
+      <p>Sign up for a free trial and experience the power of centralized online advertising management.</p>
+      <div class="cta-buttons">
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 AdVantageHub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+{% include 'footer.html' %}
+
+{% endblock %}
